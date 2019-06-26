@@ -2,9 +2,9 @@ import React from 'react';
 
 function CharacterCard(props) {
     return (
-        <div className="card">
-            <div className="image-container">
-                <img alt={props.name} src={props.image} onClick={() => props.handleIncrement(props.id)} className="incrementCard"/>
+        <div className="card" value={props.id} key={props.id} onClick={() => props.handleClick(props.id)}>
+            <div>
+                <img alt={props.name} src={props.image} className="incrementCard"/>
             </div>
         </div>
     )

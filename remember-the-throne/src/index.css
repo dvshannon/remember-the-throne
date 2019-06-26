@@ -18,6 +18,10 @@ body {
 .sub-heading {
   font-weight: 400;
 }
+.score {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
 .current-score, .high-score {
   font-weight: 100;
 }
