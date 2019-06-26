@@ -16,7 +16,10 @@ body {
   font-weight: 700;
 }
 .sub-heading {
-  font-weight: 300;
+  font-weight: 400;
+}
+.current-score, .high-score {
+  font-weight: 100;
 }
 .wrapper {
   width: 100vw;
@@ -35,6 +38,12 @@ img {
   border: #D4CDB2 2px solid;
   box-shadow:10px 7px 8px;
   border-radius: 4px;
+}
+
+img:hover {
+  width: 315px;
+  height: 215px;
+  transition: 300ms;
 }
 
 code {
