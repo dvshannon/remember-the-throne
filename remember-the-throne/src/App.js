@@ -19,15 +19,19 @@ class App extends Component {
     highScore: 0,
     clicked: []
   };
-  
+
   // method for incrementing id on click
   handleClick = id => {
-    if (this.state.clicked.indexOf(id) === -1) {
+    // creates an instance that rells if an id has already been pushed into the clicked array
+    const wasClicked = this.state.clicked.includes(id)
+    // if an id was clicked do the following
+    if (!wasClicked) {
       this.handleIncrement();
-      
     } else {
       this.handleReset();
     }
+    // push the new id into clicked regardless of win or loss
+    this.state.clicked.push(id);
   };
   // method for incrementing id on click
   handleIncrement = () => {
