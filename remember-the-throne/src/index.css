@@ -33,6 +33,7 @@ html, body {
   text-align: center;
   background-color: rgba(125, 125, 125, 0.664); 
   padding-top: 10px;
+  height: 100vh;
 }
 
 img {
