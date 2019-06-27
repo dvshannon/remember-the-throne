@@ -3,6 +3,9 @@ import CharacterCard from './components/CharacterCard';
 import characters from './characters.json';
 import Score from './components/Score';
 import Container from './components/Container';
+import swal from 'sweetalert';
+ 
+
 
 function shuffleCards(array) {
   for (let i = array.length -1; i>0; i--){
@@ -28,6 +31,7 @@ class App extends Component {
     if (!wasClicked) {
       this.handleIncrement();
     } else {
+      swal("You know nothing Jon Snow! Try Again");
       this.handleReset();
     }
     // push the new id into clicked regardless of win or loss
@@ -44,6 +48,7 @@ class App extends Component {
       this.setState({ highScore: newScore });
     }
     else if (newScore === 12) {
+      swal("King of the North!");
       this.setState({ rightOrWrong: "King of the North!" });
     }
     this.handleShuffle();
