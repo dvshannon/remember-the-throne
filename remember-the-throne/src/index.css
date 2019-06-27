@@ -3,9 +3,6 @@ html, body {
   box-sizing: border-box;
   height: 100vh;
 }
-/* .container {
-  height: 100vh;
-} */
 
 .header {
   background-color: #D4CDB2;
