@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/remember-the-throne/precache-manifest.e4194557bfba2a38830cb53dd018e562.js"
+  "/remember-the-throne/precache-manifest.dcbf92e5e3c470ff5a724016f9c0b193.js"
 );
 
 self.addEventListener('message', (event) => {
